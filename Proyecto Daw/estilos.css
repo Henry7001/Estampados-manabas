@@ -78,6 +78,17 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
 .inicio {
     align-items: center;
     justify-content: center;
