@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+
+
+/*
+Fuente para los títulos : 'Exo 2'
+fuente para parrafo o contenido: 'Cormorant Garamond' 
+Fuente del nav a : 'Francois One'
+Fuente del titulo junto al logo: 'Bebas Neue'
+Recursos de 20 diseño en la carpeta img
+*/
+
+body{
+    background-color: rgb(208, 199, 199);
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(14, 18, 18);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Francois One;
+}
+.logo h2{
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Bebas Neue;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+nav a{
+    padding-right:10px;
+    font-size: large;
+}
+
+nav a:hover{
+    color: rgb(70, 73, 77);
+}
+
+.img-inicio{
+    margin-top: 20px;
+}
+
+.img-inicio img{
+    height: 220px;
+    border-radius: 250px;
+    border: 3px solid rgb(131, 131, 131);
+    margin-right: 10px;
+    
+}
+
+main{
+    display: flex;
+    padding: 20px;
+    background-color:rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+
+.inicio{
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
+}
+
+.boton button{
+    margin-inline: 130px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.titulo1{
+    color: aliceblue;
+    font-family: 'Exo 2';
+
+}
+
+.parrafo1{
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 400px;
+    font-family: 'Cormorant Garamond' ;
+    
+}
