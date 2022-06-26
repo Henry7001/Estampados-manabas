@@ -141,6 +141,13 @@ p {
     text-align: center;
 }
 
+p.textoDescript {
+    color: rgb(21, 24, 26);
+    font-size: 40px;
+    font-family: Bebas Neue;
+    text-align: center;
+}
+
 .sub p {
     width: 300px;
 }
@@ -238,6 +245,16 @@ h1 span:after {
 ul {
     list-style: none;
     float: left;
+}
+
+ol.lista {
+    list-style: none;
+    float: left;
+}
+
+ol.lista li {
+    font-size: 30px;
+    font-family: Bebas Neue;
 }
 
 ul li {
