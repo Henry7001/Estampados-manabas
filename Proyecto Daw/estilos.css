@@ -535,13 +535,7 @@ ul li:last-child:hover:after {
 }
 
 /*Estilos para la página de tienda*/
-.main-container{
-    padding: 20px;
-    background-color:rgb(32, 28, 28);
-    margin-inline: 120px;
-    margin-top: 20px;
-    border-radius: 10px;  
-}
+
 .galeria{
     width: 100%;
     display: flex;
