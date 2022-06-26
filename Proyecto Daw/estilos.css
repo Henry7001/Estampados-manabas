@@ -533,3 +533,43 @@ ul li:last-child:hover:after {
 .whatsapp:hover {
     color: #1cc24e;
 }
+
+/*Estilos para la página de tienda*/
+.galeria{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.producto{
+    width: 30%;
+    margin-bottom: 35px;
+    font-family: 'Exo 2';
+}
+
+.img-contendor{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+    border: 3px solid rgb(131, 131, 131);
+}
+
+.img-contendor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.producto button:hover{
+   background-color: rgb(208, 199, 199);
+   
+}
+
+.producto:hover .img-contendor img{
+    transform: scale(1.2);
+}
+
+.img-contendor{
+    overflow: hidden;
+}
