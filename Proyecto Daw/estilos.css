@@ -16,510 +16,520 @@ Recursos de 20 diseño en la carpeta img
 */
 
 body {
-  background-color: rgb(208, 199, 199);
-  margin: 0;
+    background-color: rgb(208, 199, 199);
+    margin: 0;
 }
+
 header {
-  display: flex;
-  height: 70px;
-  background-color: rgb(14, 18, 18);
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-radius: 4px;
+    display: flex;
+    height: 70px;
+    background-color: rgb(14, 18, 18);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 a {
-  text-decoration: none;
-  color: aliceblue;
-  font-family: Francois One;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Francois One;
 }
+
 .logo h2 {
-  color: aliceblue;
-  font-size: x-large;
-  font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Bebas Neue;
 }
+
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 .logo img {
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 100px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
 }
 
 nav a {
-  padding-right: 10px;
-  font-size: large;
+    padding-right: 10px;
+    font-size: large;
 }
 
 nav a:hover {
-  color: rgb(70, 73, 77);
+    color: rgb(70, 73, 77);
 }
 
 .img-inicio {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .img-inicio img {
-  height: 220px;
-  border-radius: 250px;
-  border: 3px solid rgb(131, 131, 131);
-  margin-right: 10px;
+    height: 220px;
+    border-radius: 250px;
+    border: 3px solid rgb(131, 131, 131);
+    margin-right: 10px;
 }
 
 .main-container {
-  display: flex;
-  padding: 20px;
-  background-color: rgb(32, 28, 28);
-  margin-inline: 120px;
-  margin-top: 20px;
-  border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .inicio {
-  align-items: center;
-  justify-content: center;
-  padding-inline: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
 }
 
 .boton button {
-  margin-inline: 130px;
-  height: 40px;
-  width: 120px;
-  font-weight: bold;
-  margin-top: 15px;
+    margin-inline: 130px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 .titulo1 {
-  color: aliceblue;
-  font-family: "Exo 2";
+    color: aliceblue;
+    font-family: "Exo 2";
 }
 
 .parrafo1 {
-  color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-  width: 400px;
-  font-family: "Cormorant Garamond";
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 400px;
+    font-family: "Cormorant Garamond";
 }
 
 footer {
-  background-color: rgb(14, 18, 18);
-  margin-top: 20px;
-  background-color: rgb(208, 199, 199);
-  margin: 0;
+    background-color: rgb(14, 18, 18);
+    margin-top: 20px;
+    background-color: rgb(208, 199, 199);
+    margin: 0;
 }
 
 header {
-  display: flex;
-  height: 70px;
-  background-color: rgb(14, 18, 18);
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-radius: 4px;
+    display: flex;
+    height: 70px;
+    background-color: rgb(14, 18, 18);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 a {
-  text-decoration: none;
-  color: aliceblue;
-  font-family: Francois One;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Francois One;
 }
 
 .logo h2 {
-  color: aliceblue;
-  font-size: x-large;
-  font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Bebas Neue;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 100px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
 }
 
 nav a {
-  padding-right: 10px;
-  font-size: large;
+    padding-right: 10px;
+    font-size: large;
 }
 
 nav a:hover {
-  color: rgb(171, 173, 175);
+    color: rgb(171, 173, 175);
 }
 
 .img-inicio {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .img-inicio img {
-  height: 220px;
-  border-radius: 250px;
-  border: 3px solid rgb(131, 131, 131);
-  margin-right: 10px;
+    height: 220px;
+    border-radius: 250px;
+    border: 3px solid rgb(131, 131, 131);
+    margin-right: 10px;
 }
 
 .main-container {
-  display: flex;
-  padding: 20px;
-  background-color: rgb(32, 28, 28);
-  margin-inline: 120px;
-  margin-top: 20px;
-  border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: rgb(32, 28, 28);
-  margin-inline: 120px;
-  margin-top: 20px;
-  border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .inicio {
-  align-items: center;
-  justify-content: center;
-  padding-inline: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
 }
 
 .boton button {
-  margin-inline: 130px;
-  height: 40px;
-  width: 120px;
-  font-weight: bold;
-  margin-top: 15px;
+    margin-inline: 130px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 .titulo {
-  color: aliceblue;
-  font-family: "Exo 2";
+    color: aliceblue;
+    font-family: "Exo 2";
 }
 
 .titulo1 {
-  color: aliceblue;
-  font-family: "Exo 2";
+    color: aliceblue;
+    font-family: "Exo 2";
 }
 
 .parrafo1 {
-  color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-  width: 400px;
-  font-family: "Exo 2";
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 400px;
+    font-family: "Exo 2";
+}
+
+main {
+    height: 100vh;
 }
 
 footer {
-  background-color: rgb(14, 18, 18);
-  color: aliceblue;
-  font-size: x-large;
-  font-family: Bebas Neue;
-  margin-top: 300px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+    background-color: rgb(14, 18, 18);
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Bebas Neue;
+    margin-top: 300px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .sub h3,
 p {
-  color: aliceblue;
-  text-align: center;
+    color: aliceblue;
+    text-align: center;
 }
 
 .sub p {
-  width: 300px;
+    width: 300px;
 }
 
 .sub input {
-  margin-left: 50px;
-  margin-bottom: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .redes {
-  color: aliceblue;
+    color: aliceblue;
 }
 
 .iconos {
-  margin-left: 80px;
+    margin-left: 80px;
 }
 
 .redes h3 {
-  text-align: center;
-  width: 250px;
+    text-align: center;
+    width: 250px;
 }
 
 .mapa {
-  margin: 0;
+    margin: 0;
 }
 
 .container-footer {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .redes img {
-  height: 40px;
+    height: 40px;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
+
 .card {
-  border: 3px solid #d0c7c7;
-  color: #d0c7c7;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  border-radius: 20px;
-  font-size: 20px;
-  align-items: center;
-  gap: 10px;
+    border: 3px solid #d0c7c7;
+    color: #d0c7c7;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-radius: 20px;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
 .card__title {
-  color: #eeefc9;
-  font-family: "Exo 2";
+    color: #eeefc9;
+    font-family: "Exo 2";
 }
 
 .card__body p {
-  font-family: sans-serif;
-  text-align: left;
+    font-family: sans-serif;
+    text-align: left;
 }
+
 .card__img {
-  width: 30%;
+    width: 30%;
 }
 
 .card__img img {
-  max-width: 200px;
-  min-height: 200px;
-  max-height: 100%;
-  object-fit: cover;
-  min-width: 100%;
-  border-radius: 10%;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    border-radius: 10%;
 }
 
 .px-2 {
-  padding: 20px;
+    padding: 20px;
 }
 
 .mx-2 {
-  margin: 20px;
+    margin: 20px;
 }
 
 p.textoDescript {
-  color: rgb(21, 24, 26);
-  font-size: 40px;
-  font-family: Bebas Neue;
-  text-align: center;
+    color: rgb(21, 24, 26);
+    font-size: 40px;
+    font-family: Bebas Neue;
+    text-align: center;
 }
 
 .sub p {
-  width: 300px;
+    width: 300px;
 }
 
 .sub input {
-  margin-left: 50px;
-  margin-bottom: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .redes {
-  color: aliceblue;
+    color: aliceblue;
 }
 
 .iconos {
-  margin-left: 80px;
+    margin-left: 80px;
 }
 
 .redes h3 {
-  text-align: center;
-  width: 250px;
+    text-align: center;
+    width: 250px;
 }
 
 .mapa {
-  margin: 0;
+    margin: 0;
 }
 
 .container-footer {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .redes img {
-  height: 40px;
+    height: 40px;
 }
+
 
 /* Wrapper */
 
 .wrapper {
-  max-width: 960px;
-  margin: 65px auto 0;
+    max-width: 960px;
+    margin: 65px auto 0;
 }
+
 
 /* Redes sociales */
 
 .titulo-Redes {
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  font-size: 1em;
-  font-weight: 100;
-  margin: 0 0 60px 0;
-  font-size: 48px;
-  font-family: "Exo 2";
-  color: rgba(12, 12, 12, 0.8);
-  text-shadow: 0 1px #676e70, 0 2px #676e70, 0 3px #676e70, 0 4px #676e70,
-    0 5px #676e70;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0 0 60px 0;
+    font-size: 48px;
+    font-family: "Exo 2";
+    color: rgba(12, 12, 12, 0.8);
+    text-shadow: 0 1px #676e70, 0 2px #676e70, 0 3px #676e70, 0 4px #676e70, 0 5px #676e70;
 }
 
 h1 span {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
 }
 
 h1 span:before,
 h1 span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  height: 1px;
-  background: #676e70;
-  width: 99999px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #676e70;
+    width: 99999px;
 }
 
 h1 span:before {
-  left: 100%;
-  margin-left: 20px;
+    left: 100%;
+    margin-left: 20px;
 }
 
 h1 span:after {
-  right: 100%;
-  margin-right: 20px;
+    right: 100%;
+    margin-right: 20px;
 }
 
 .list {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 470px;
-  margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    margin: auto;
 }
 
 ul {
-  list-style: none;
-  float: left;
+    list-style: none;
+    float: left;
 }
 
 ol.lista {
-  list-style: none;
-  float: left;
+    list-style: none;
+    float: left;
 }
 
 ol.lista li {
-  font-size: 30px;
-  font-family: Bebas Neue;
+    font-size: 30px;
+    font-family: Bebas Neue;
 }
 
 ul li {
-  position: relative;
-  width: 80px;
-  height: 40px;
-  float: left;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    float: left;
 }
 
 ul li a {
-  position: absolute;
-  width: 80px;
-  height: 40px;
-  display: block;
-  background: #33322f;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  text-decoration: none;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    display: block;
+    background: #33322f;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
 }
 
 ul li a:after {
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: 0;
-  border: 40px solid transparent;
-  border-top: 0;
-  border-bottom: 40px solid #33322f;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    border: 40px solid transparent;
+    border-top: 0;
+    border-bottom: 40px solid #33322f;
 }
 
 ul li a:before {
-  content: "";
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  border: 40px solid transparent;
-  border-top: 40px solid #33322f;
-  border-bottom: 0;
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    border: 40px solid transparent;
+    border-top: 40px solid #33322f;
+    border-bottom: 0;
 }
 
 ul li a:hover {
-  background: #000;
+    background: #000;
 }
 
 ul li a:hover:after {
-  border-bottom: 40px solid #000;
+    border-bottom: 40px solid #000;
 }
 
 ul li a:hover:before {
-  border-top: 40px solid #000;
+    border-top: 40px solid #000;
 }
 
 ul li:first-child:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -30px;
-  border: 20px solid transparent;
-  border-top: 0;
-  border-bottom: 20px solid #33322f;
-  transform: rotate(-90deg);
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    border: 20px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid #33322f;
+    transform: rotate(-90deg);
 }
 
 ul li:last-child:after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: -30px;
-  border: 20px solid transparent;
-  border-top: 0;
-  border-bottom: 20px solid #33322f;
-  transform: rotate(90deg);
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    border: 20px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid #33322f;
+    transform: rotate(90deg);
 }
 
 ul li:first-child:hover:before,
 ul li:last-child:hover:after {
-  border-bottom: 20px solid #000;
+    border-bottom: 20px solid #000;
 }
+
 
 /* Colores */
 
 .tiktok:hover {
-  color: #da2d2e;
+    color: #da2d2e;
 }
 
 .instagram:hover {
-  color: #66269e;
+    color: #66269e;
 }
 
 .whatsapp:hover {
-  color: #1cc24e;
+    color: #1cc24e;
 }
