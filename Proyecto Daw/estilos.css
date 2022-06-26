@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(70, 73, 77);
+    color: rgb(171, 173, 175);
 }
 
 .img-inicio {
@@ -119,6 +119,9 @@ nav a:hover {
 
 footer {
     background-color: rgb(14, 18, 18);
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Bebas Neue;
     margin-top: 300px;
     position: fixed;
     right: 0;
