@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Luis Byron Vargas</title>
+    <style>
+      .valores img {
+        width: 16%;
+        object-fit: contain;
+        transform: scaleX(-1);
+      }
+      .space {
+        flex: 1 1 auto;
+      }
+
+      .lista {
+        margin-top: 20px;
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .valor {
+        color: #f0f8ff;
+        text-align: center;
+        font-family: "Exo 2";
+        border-radius: 5%;
+        border: 2px solid #f0f8ff;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoEmpresa.jpg" alt="" />
+        <h2 class="nombre-empresa">RUBBER STORE</h2>
+      </div>
+      <nav>
+        <a href="" class="nav-link">Inicio</a>
+        <a href="" class="nav-link">Quienes somos</a>
+        <a href="" class="nav-link">Servicios</a>
+        <a href="" class="nav-link">Tienda</a>
+        <a href="" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container" style="display: block">
+        <h1 class="titulo1 text-center">¿Quiénes Somos?</h1>
+        <div class="card px-2 mx-2">
+          <div class="card__body">
+            <h2 class="card__title text-center">Misión</h2>
+            <p>
+              Se caracteriza por brindar calidad y cumplimiento en su trabajo de
+              estampado y sublimación, poniendo en práctica la experiencia de su
+              personal, buscando el mejoramiento continuo en las técnicas de
+              estampado, innovando en diseños y utilizando elementos de alta
+              calidad.
+            </p>
+          </div>
+          <div class="card__img">
+            <img src="img/mision.webp " alt="Mision" />
+          </div>
+        </div>
+        <div class="card px-2 mx-2">
+          <div class="card__body">
+            <h2 class="card__title text-center">Visión</h2>
+            <p>
+              Será para el 2023 la principal empresa en servicio de estampado y
+              sublimación en la cuidad de Guayaquil, a través de la
+              implementación de nuevas tecnologías y tendencias que permiten
+              desarrollar nuestro servicio con una excelente calidad y
+              cumplimiento.
+            </p>
+          </div>
+          <div class="card__img">
+            <img src="img/vision.webp" alt="Vision" />
+          </div>
+        </div>
+        <div class="mx-2">
+          <h2 class="titulo1 text-center" style="font-size: 32px">
+            Valores de nuestra empresa
+          </h2>
+          <div class="valores" style="display: flex">
+            <img src="img/monito.webp" alt="monito" />
+            <div class="lista">
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-bulb"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"
+                  />
+                  <path
+                    d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+                  />
+                  <line x1="9.7" y1="17" x2="14.3" y2="17" />
+                </svg>
+                <h4>Creatividad</h4>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-award"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="12" cy="9" r="6" />
+                  <polyline
+                    points="9 14.2 9 21 12 19 15 21 15 14.2"
+                    transform="rotate(-30 12 9)"
+                  />
+                  <polyline
+                    points="9 14.2 9 21 12 19 15 21 15 14.2"
+                    transform="rotate(30 12 9)"
+                  />
+                </svg>
+                <h4>Calidad</h4>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-scale"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="7" y1="20" x2="17" y2="20" />
+                  <path d="M6 6l6 -1l6 1" />
+                  <line x1="12" y1="3" x2="12" y2="20" />
+                  <path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0" />
+                  <path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0" />
+                </svg>
+                <h4>Honestidad</h4>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-list-check"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                  <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                  <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                  <line x1="11" y1="6" x2="20" y2="6" />
+                  <line x1="11" y1="12" x2="20" y2="12" />
+                  <line x1="11" y1="18" x2="20" y2="18" />
+                </svg>
+                <h4>Responsabilidad</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container-footer">
+          <div class="sub">
+            <h3>Suscríbete gratis</h3>
+            <p>
+              Recibe en tu email ofertas y cupones especial para tus compras.
+            </p>
+            <input type="email" />
+            <button>Enviar</button>
+          </div>
+          <div class="redes">
+            <h3>Siguenos en nuestras redes sociales</h3>
+            <div class="iconos">
+              <a href="https://www.instagram.com/poloxfx/" target="_blank"
+                ><img
+                  src="https://i.pinimg.com/originals/16/4a/5a/164a5a83a26eef0f41c0379e6836cf7c.png"
+                  alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/paolo.alvarezvelez/"
+                target="_blank"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="container-mapa">
+            <div class="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.823494270084!2d-79.92916156320554!3d-2.162097792830226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9790ac7ed3%3A0xc168975e091f8ca8!2sCOMPUTRON!5e0!3m2!1ses!2sec!4v1656129681933!5m2!1ses!2sec"
+                width="300"
+                height="200"
+                style="border: 2px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <p>&copy;RUBBER STORE 2022</p>
+      </footer>
+    </main>
+  </body>
+</html>

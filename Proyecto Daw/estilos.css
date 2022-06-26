@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Quicksand:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap");
 
 /*
 Fuente para los títulos : 'Exo 2'
@@ -12,148 +11,183 @@ Fuente del titulo junto al logo: 'Bebas Neue'
 Recursos de 20 diseño en la carpeta img
 */
 
-body{
-    background-color: rgb(208, 199, 199);
-    margin: 0;
+body {
+  background-color: rgb(208, 199, 199);
+  margin: 0;
 }
-header{
-    display: flex;
-    height: 70px;
-    background-color: rgb(14, 18, 18);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-    font-family: Francois One;
-}
-.logo h2{
-    color: aliceblue;
-    font-size: x-large;
-    font-family: Bebas Neue;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 100px;
+header {
+  display: flex;
+  height: 70px;
+  background-color: rgb(14, 18, 18);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-nav a{
-    padding-right:10px;
-    font-size: large;
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Francois One;
+}
+.logo h2 {
+  color: aliceblue;
+  font-size: x-large;
+  font-family: Bebas Neue;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100px;
 }
 
-nav a:hover{
-    color: rgb(70, 73, 77);
+nav a {
+  padding-right: 10px;
+  font-size: large;
 }
 
-.img-inicio{
-    margin-top: 20px;
+nav a:hover {
+  color: rgb(70, 73, 77);
 }
 
-.img-inicio img{
-    height: 220px;
-    border-radius: 250px;
-    border: 3px solid rgb(131, 131, 131);
-    margin-right: 10px;
-    
+.img-inicio {
+  margin-top: 20px;
 }
 
-
-.main-container{
-    display: flex;
-    padding: 20px;
-    background-color:rgb(32, 28, 28);
-    margin-inline: 120px;
-    margin-top: 20px;
-    border-radius: 10px;
-   
+.img-inicio img {
+  height: 220px;
+  border-radius: 250px;
+  border: 3px solid rgb(131, 131, 131);
+  margin-right: 10px;
 }
 
-.inicio{
-    align-items: center;
-    justify-content: center;
-    padding-inline: 50px;
+.main-container {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(32, 28, 28);
+  margin-inline: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.boton button{
-    margin-inline: 130px;
-    height: 40px;
-    width: 120px;
-    font-weight: bold;
-    margin-top: 15px;
+.inicio {
+  align-items: center;
+  justify-content: center;
+  padding-inline: 50px;
 }
 
-.titulo1{
-    color: aliceblue;
-    font-family: 'Exo 2';
-
+.boton button {
+  margin-inline: 130px;
+  height: 40px;
+  width: 120px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
-.parrafo1{
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    width: 400px;
-    font-family: 'Cormorant Garamond' ;
-    
+.titulo1 {
+  color: aliceblue;
+  font-family: "Exo 2";
 }
 
-footer{
-    background-color: rgb(14, 18, 18);
-    margin-top: 300px;
-   
-    
+.parrafo1 {
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 400px;
+  font-family: "Cormorant Garamond";
 }
 
-
-.sub h3, p{
-    color: aliceblue;
-    text-align: center;
+footer {
+  background-color: rgb(14, 18, 18);
+  margin-top: 20px;
 }
 
-.sub p{
-    width: 300px;
+.sub h3,
+p {
+  color: aliceblue;
+  text-align: center;
 }
 
-.sub input{
-    margin-left: 50px;
-    margin-bottom: 20px;
+.sub p {
+  width: 300px;
 }
 
-.redes{
-    color: aliceblue; 
-    
+.sub input {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
-.iconos{
-    margin-left: 80px;
+.redes {
+  color: aliceblue;
 }
 
-.redes h3{
-    text-align: center;
-    width: 250px;
+.iconos {
+  margin-left: 80px;
 }
 
-
-.mapa{
-    margin: 0;
+.redes h3 {
+  text-align: center;
+  width: 250px;
 }
 
-.container-footer{
-    display: flex;
-    justify-content: space-between;
+.mapa {
+  margin: 0;
 }
 
-.redes img{
-    height: 40px;
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes img {
+  height: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+.card {
+  border: 3px solid #d0c7c7;
+  color: #d0c7c7;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-radius: 20px;
+  font-size: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__title {
+  color: #eeefc9;
+  font-family: "Exo 2";
+}
+
+.card__body p {
+  font-family: sans-serif;
+  text-align: left;
+}
+.card__img {
+  width: 30%;
+}
+
+.card__img img {
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 100%;
+  object-fit: cover;
+  min-width: 100%;
+  border-radius: 10%;
+}
+
+.px-2 {
+  padding: 20px;
+}
+
+.mx-2 {
+  margin: 20px;
 }
