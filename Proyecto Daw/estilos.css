@@ -103,6 +103,11 @@ nav a:hover {
     margin-top: 15px;
 }
 
+.titulo {
+    color: aliceblue;
+    font-family: 'Exo 2';
+}
+
 .titulo1 {
     color: aliceblue;
     font-family: 'Exo 2';
@@ -189,7 +194,9 @@ p {
     font-size: 1em;
     font-weight: 100;
     margin: 0 0 60px 0;
-    font: 48px sans-serif;
+    /*font: 48px sans-serif;*/
+    font-size: 48px;
+    font-family: 'Exo 2';
     color: rgba(12, 12, 12, 0.8);
     text-shadow: 0 1px #676e70, 0 2px #676e70, 0 3px #676e70, 0 4px #676e70, 0 5px #676e70
 }
