@@ -581,3 +581,183 @@ ul li:last-child:hover:after {
 .img-contendor {
     overflow: hidden;
 }
+
+
+
+/*ESTILOS DE LA SECCION SERVICIOS*/
+
+
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.service-container h2{
+    font-family: 'Exo 2';
+    font-size: 2.5rem;
+    position: absolute;
+    
+}
+
+.principio {
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
+}
+
+
+
+.boton button {
+    margin-inline: 120px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #d4d1d1;
+    border: 2px solid #000;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.boton button a{
+    font-family: 'Exo 2';
+    color: black;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+.boton button:hover{
+    background-color: #000;
+}
+.boton button a:hover{
+    color: rgb(254, 254, 254);
+}
+
+.titulo-service {
+    color: aliceblue;
+    font-family: "Exo 2";
+}
+
+.parrafo-service {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 400px;
+    font-family: "Exo 2";
+}
+
+.first-container {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(32, 28, 28);
+    margin-inline: 120px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.img-principio {
+    margin-top: 20px;
+}
+
+.img-principio img {
+    height: 195px;
+    border-radius: 250px;
+    border: 3px solid rgb(21, 20, 20);
+    margin-right: 25px;
+}
+
+.border{
+    color: black;
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        1px 1px 0 white,
+        -1px 1px 0 white    
+    
+}
+
+.wave{
+    color: rgb(255, 255, 255);
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave{
+  0%, 100% {
+    clip-path: polygon(
+        0% 47%,
+        10% 48%,
+        33% 54%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+    );
+  }
+  
+  50%{
+    clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100% 
+    );
+  }
+}
+
+.slider-services{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    margin-inline: 95px;
+    border-radius: 10px;
+}
+
+.slider-services ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 17s infinite;
+    animation-direction: alternate;
+}
+
+.slider-services li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider-services img{
+    height: 630%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
