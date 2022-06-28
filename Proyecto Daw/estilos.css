@@ -614,45 +614,36 @@ ul li:last-child:hover:after {
 
 
 
-.boton button {
-    margin-inline: 120px;
-    height: 40px;
-    width: 120px;
-    font-weight: bold;
-    margin-top: 15px;
-    background-color: #d4d1d1;
-    border: 2px solid #000;
-    border-radius: 3px;
-    padding: 0;
+.button{
+    background-color: #ffffff;
+	border: none;
+	color: rgb(0, 0, 0);
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+    margin-inline: 110px;
+    width: 45%;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 
-.boton button a{
-    font-family: 'Exo 2';
+.gobutton{
+    background-color: white;
     color: black;
-    font-weight: bolder;
-    margin: 15px;
+    border-radius: 5px;
 }
 
-.boton button:hover{
-    background-color: #000;
-}
-.boton button a:hover{
-    color: rgb(254, 254, 254);
+.gobutton:hover {
+    background-color: black;
+    color: white;
 }
 
-.titulo-service {
-    color: aliceblue;
-    font-family: "Exo 2";
-}
-
-.parrafo-service {
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    width: 400px;
-    font-family: "Exo 2";
-}
 
 .first-container {
     display: flex;
@@ -663,9 +654,6 @@ ul li:last-child:hover:after {
     border-radius: 10px;
 }
 
-.img-principio {
-    margin-top: 20px;
-}
 
 .img-principio img {
     height: 195px;
@@ -674,58 +662,7 @@ ul li:last-child:hover:after {
     margin-right: 25px;
 }
 
-.border{
-    color: black;
-    text-shadow: 
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        1px 1px 0 white,
-        -1px 1px 0 white    
-    
-}
 
-.wave{
-    color: rgb(255, 255, 255);
-    animation: wave 2s ease-in-out infinite;
-}
-
-@keyframes wave{
-  0%, 100% {
-    clip-path: polygon(
-        0% 47%,
-        10% 48%,
-        33% 54%,
-        54% 60%,
-        70% 61%,
-        84% 59%,
-        100% 52%,
-        100% 100%,
-        0% 100%
-    );
-  }
-  
-  50%{
-    clip-path: polygon(
-        0% 60%,
-        15% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100% 
-    );
-  }
-}
-
-.slider-services{
-    height: 300px;
-    width: 500px;
-    overflow: hidden;
-    margin-inline: 95px;
-    border-radius: 10px;
-}
 
 .slider-services ul{
     display: flex;

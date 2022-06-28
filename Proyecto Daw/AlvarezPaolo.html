@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>Servicios</title>
+    <style>
+      .titulo-service {
+        color: aliceblue;
+        font-family: "Exo 2";
+      }
+    
+      .parrafo-service {
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        width: 400px;
+        font-family: "Exo 2";
+      }
+    
+    </style>
 </head>
 <body>
     <header>
@@ -23,10 +39,9 @@
           <a href="RuizHenry.html" class="nav-link">Contacto</a>
         </nav>
     </header>
-   <main>
+   
     <div class="service-container">
-        <h2 class="border">Nuestros servicios</h2>
-        <h2 class="wave">Nuestros servicios</h2>
+        <h2 class="border" style="color: #fff;">Nuestros servicios</h2>
     </div>
     <div class="first-container">
         <div class="principio">
@@ -36,11 +51,9 @@
             garantizamos no solo la calidad de nuestros estampados sino también de nuestros diseños.
             
           </p>
-          <div class="boton">
-            <button><a href="SolórzanoRicardo.html">Ver Tienda</a></button>
-          </div>
+          <a href="SolórzanoRicardo.html" class="button gobutton">Ver tienda</a>
         </div>
-        <div class="img-principio">
+        <div class="img-principio" style="margin-top: 20px;">
           <img src="img/maquina.jpg" alt="" />
           <img src="img/diseño16.jpg" alt="" />
           <img src="img/diseño5.jpg" alt="" />
@@ -55,11 +68,13 @@
             series, animes, personas, movimientos, moda, peliculas, el límite es tu creatividad.
             
           </p>
-          <div class="boton">
-            <button><a href="SolórzanoRicardo.html">Ver Tienda</a></button>
-          </div>
+          <a href="SolórzanoRicardo.html" class="button gobutton">Ver tienda</a>
         </div>
-        <div class="slider-services">
+        <div class="slider-services" style=" height: 300px;
+          width: 500px;
+          overflow: hidden;
+          margin-inline: 95px;
+          border-radius: 10px;">
           <ul>
             <li><img src="img/diseño4.jpg" alt=""></li>
             <li><img src="img/diseño13.jpg" alt=""></li>
@@ -78,7 +93,7 @@
     <footer>
         <p>&copy; RUBBER STORE 2022</p>
     </footer>
-  </main>
+  
 
 </body>
 </html>
