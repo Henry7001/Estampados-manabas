@@ -97,7 +97,7 @@
             cursor:pointer;
             width:100%;
             border:none;
-            background:#0CF;
+            background:rgb(32, 28, 28);
             color:#FFF;
             margin:0 0 5px;
             padding:10px;
@@ -105,7 +105,7 @@
         }
 
         #contact button[type="submit"]:hover {
-            background:#09C;
+            background:rgb(32, 28, 28);
             -webkit-transition:background 0.3s ease-in-out;
             -moz-transition:background 0.3s ease-in-out;
             transition:background-color 0.3s ease-in-out;
@@ -155,26 +155,23 @@
         </div>
 
         <div class="container">  
-            <form id="contact" action="" method="post">
+            <form id="contact" onsubmit="validar();">
               <h3>Formulario de contacto</h3>
               <h4>Contactenos, apenas lo leamos, lo responderemos.</h4>
               <fieldset>
-                <input placeholder="Su nombre" type="text" tabindex="1" required autofocus>
+                <input id="nombre" placeholder="Su nombre" type="text" tabindex="1" required autofocus>
               </fieldset>
               <fieldset>
-                <input placeholder="Su correo electrónico" type="email" tabindex="2" required>
+                <input id="correo" placeholder="Su correo electrónico" type="text" tabindex="2" required>
               </fieldset>
               <fieldset>
-                <input placeholder="Su número de telefono" type="tel" tabindex="3" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Asunto del contacto" type="url" tabindex="4" required>
+                <input placeholder="Asunto del contacto" type="text" tabindex="4" required>
               </fieldset>
               <fieldset>
                 <textarea placeholder="Escriba su mensaje aquí..." tabindex="5" required></textarea>
               </fieldset>
               <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Submit</button>
               </fieldset>
             </form>
           </div>
@@ -184,7 +181,16 @@
         </footer>
     </main>
     <script>
-        
+        var form_correo= document.getElementById('correo');
+        function validar(){
+            var correo= form_correo.value;
+            var expresion = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            if(!expresion.test(correo)){
+                alert('Correo no valido');
+                form_correo.focus();
+                return false;
+            }
+        }
     </script>
 </body>
 </html>
