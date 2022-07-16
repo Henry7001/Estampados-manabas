@@ -532,6 +532,10 @@ ul li:last-child:hover:after {
     color: #1cc24e;
 }
 
+.email:hover {
+    color: #d1e61c;
+}
+
 
 /*Estilos para la página de tienda*/
 
