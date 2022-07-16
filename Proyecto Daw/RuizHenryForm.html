@@ -162,13 +162,19 @@
                 <input id="nombre" placeholder="Su nombre" type="text" tabindex="1" autofocus>
               </fieldset>
               <fieldset>
-                <input id="correo" placeholder="Su correo electrónico" type="text" tabindex="2">
+                <input id="cedula" placeholder="Su número de cédula" type="text" tabindex="2">
               </fieldset>
               <fieldset>
-                <input id="asunto" placeholder="Asunto del contacto" type="text" tabindex="4">
+                <input id="correo" placeholder="Su correo electrónico" type="text" tabindex="3">
               </fieldset>
               <fieldset>
-                <textarea id="mensaje" placeholder="Escriba su mensaje aquí..." tabindex="5"></textarea>
+                <input id="celular" placeholder="Su número de celular" type="text" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <input id="asunto" placeholder="Asunto del contacto" type="text" tabindex="5">
+              </fieldset>
+              <fieldset>
+                <textarea id="mensaje" placeholder="Escriba su mensaje aquí..." tabindex="6"></textarea>
               </fieldset>
               <fieldset>
                 <button name="enviar" type="submit" id="contact-submit">Enviar mensaje</button>
@@ -185,18 +191,37 @@
         var nombre= document.getElementById('nombre');
         var asunto= document.getElementById('asunto');
         var mensaje= document.getElementById('mensaje');
+        var cedula= document.getElementById('cedula');
+        var celular= document.getElementById('celular');
         var emailExpresion = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         function validar(){
             //validar correo
             if(!emailExpresion.test(correo.value)){
                 alert('Correo no valido');
                 correo.focus();
-                return false;
             }
             //validar campos vacios
-            if(nombre.value='' || asunto.value == '' || mensaje.value == ''){
+            if(nombre.value='' || asunto.value == '' || mensaje.value == '' || cedula.value == '' || celular.value == ''){
                 alert('Todos los campos son obligatorios');
-                return false;
+            }
+            /*validar que el campo de celular tenga formato de número de Ecuador 
+            y solo puedan ingresar números */
+            if(isNaN(celular.value)){
+                alert('Solo debe ingresar números en el campo de celular');
+                celular.focus();
+            }
+            if(celular.value.length != 10){
+                alert('El número de celular debe tener 10 dígitos');
+                celular.focus();
+            }
+            //validar que la cédula tenga 10 dígitos y sean números
+            if(isNaN(cedula.value)){
+                alert('Solo debe ingresar números en el campo de cédula');
+                cedula.focus();
+            }
+            if(cedula.value.length != 10){
+                alert('El número de cédula debe tener 10 dígitos');
+                cedula.focus();
             }
         }
     </script>
