@@ -19,8 +19,7 @@
         .iframe-margin{
             border-radius: 10px;
             border: 20px solid rgb(32, 28, 28);
-        }
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+            }
 
         * {
             margin:0;
@@ -31,7 +30,6 @@
             -webkit-font-smoothing:antialiased;
             -moz-font-smoothing:antialiased;
             -o-font-smoothing:antialiased;
-            font-smoothing:antialiased;
             text-rendering:optimizeLegibility;
         }
 
@@ -51,7 +49,8 @@
         }
 
         #contact h3 {
-            color: #F96;
+            color: rgb(32, 28, 28);
+            font-family: Bebas Neue;
             display: block;
             font-size: 30px;
             font-weight: 400;
@@ -59,8 +58,10 @@
 
         #contact h4 {
             margin:5px 0 15px;
+            font-family: Bebas Neue;
             display:block;
-            font-size:13px;
+            font-size:20px;
+            font-weight: 400;
         }
 
         fieldset {
@@ -155,22 +156,22 @@
 
         <div class="container">  
             <form id="contact" action="" method="post">
-              <h3>Quick Contact</h3>
-              <h4>Contact us today, and get reply with in 24 hours!</h4>
+              <h3>Formulario de contacto</h3>
+              <h4>Contactenos, apenas lo leamos, lo responderemos.</h4>
               <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                <input placeholder="Su nombre" type="text" tabindex="1" required autofocus>
               </fieldset>
               <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                <input placeholder="Su correo electrónico" type="email" tabindex="2" required>
               </fieldset>
               <fieldset>
-                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                <input placeholder="Su número de telefono" type="tel" tabindex="3" required>
               </fieldset>
               <fieldset>
-                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                <input placeholder="Asunto del contacto" type="url" tabindex="4" required>
               </fieldset>
               <fieldset>
-                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                <textarea placeholder="Escriba su mensaje aquí..." tabindex="5" required></textarea>
               </fieldset>
               <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
