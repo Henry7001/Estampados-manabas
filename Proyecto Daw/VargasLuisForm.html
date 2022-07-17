@@ -25,7 +25,7 @@
         margin-bottom: 30px;
       }
 
-      .control small {
+      .oculto {
         visibility: hidden;
         display: none;
       }
@@ -70,6 +70,8 @@
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: red;
         font-size: 15px;
+        display: block;
+        visibility: visible;
       }
     </style>
   </head>
@@ -102,27 +104,28 @@
               id="cantidad"
               class="form-control"
               placeholder="Ingrese cantidad"
+              onchange="quitarAlerta(this)"
             />
-            <small>La cantidad debe ser mayor a 0</small>
+            <small class="oculto">La cantidad debe ser mayor a 0</small>
           </div>
         </div>
         <div class="mb-3 row__input">
           <label for="cantidad" class="col-form-label">Tallas</label>
           <div class="control">
-            <select name="tallas" id="tallas">
+            <select name="tallas" id="tallas" onchange="quitarAlerta(this)">
               <option value="default">Seleccionar</option>
               <option value="small">Pequeña</option>
               <option value="medium">Mediana</option>
               <option value="large">Grande</option>
               <option value="x-larga">Extra Grande</option>
             </select>
-            <small>No ha seleccionado ninguna talla</small>
+            <small class="oculto">No ha seleccionado ninguna talla</small>
           </div>
         </div>
         <div class="mb-3 row__input">
           <label for="cantidad" class="col-form-label">Modelos</label>
           <div class="control">
-            <select name="modelos" id="modelos" onchange="doSomething(this);">
+            <select name="modelos" id="modelos" onchange="cambiarImagen(this);">
               <option value="model1">Modelo 1</option>
               <option value="model2">Modelo 2</option>
               <option value="model3">Modelo 3</option>
@@ -146,7 +149,7 @@
     <script>
       const $ = (element) => document.querySelector(element);
 
-      function doSomething(seleccionado) {
+      function cambiarImagen(seleccionado) {
         const value = seleccionado[seleccionado.selectedIndex].value;
         const $img = $(".img_model");
         $img.src = `img/${value}.jpg`;
@@ -158,13 +161,12 @@
         const $tallas = $("#tallas");
         if ($cantidad.value < 1) {
           alerta($cantidad);
-          return false;
+          valido = false;
         }
         if ($tallas.selectedIndex === 0) {
           alerta($tallas);
           return false;
         }
-        alert("Ingrese métodos de pago");
         return valido;
       }
 
@@ -172,9 +174,13 @@
       const alerta = (element) => {
         element.style.border = "1px solid red";
         const $small = element.nextElementSibling || element.nextSibling;
-        $small.className = " alert";
-        $small.style.display = "block";
-        $small.style.visibility = "visible";
+        $small.className = $small.className.replace("oculto", " alert");
+      };
+
+      const quitarAlerta = (element) => {
+        element.style.border = "1px solid #ccc";
+        const $small = element.nextElementSibling || element.nextSibling;
+        $small.className = $small.className.replace(" alert", " oculto");
       };
     </script>
   </body>
