@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>Tienda</title>
+        <style>
+            .producto h3{
+                color: aliceblue;
+                justify-content: center;
+                align-items: center;
+                text-align: start; 
+                display: flex; 
+            }
+
+            .producto button{
+                width: 110px; 
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        </style>
+         <script>                       
+            function cambiar(nodoA){
+            let texto = document.getElementsByClassName("texto");
+            nodoA.style.color = '#D68910';
+
+            }
+            
+            function restaurar(nodoA) {
+            let texto = document.getElementsByClassName("texto");
+            nodoA.style.color = 'aliceblue';
+        }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logoEmpresa.jpg" alt="logo rubber">
+                <h2 class="nombre-empresa">
+                RUBBER STORE
+                </h2>
+            </div>
+            <nav>
+                <a href="DelgadoDave.html" class="nav-link">Inicio</a>
+                <a href="VargasLuis.html" class="nav-link">Quienes somos</a>
+                <a href="AlvarezPaolo.html" class="nav-link">Servicios</a>
+                <a href="SolórzanoRicardo.html" class="nav-link">Tienda</a>
+                <a href="RuizHenry.html" class="nav-link">Contacto</a>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container2">
+                <div>
+                    <h2 class="titulo1" style="margin-left: 33px; color: aliceblue; font-family: 'Exo 2'">Tienda en Línea</h2>
+                </div>
+                <div class="galeria">
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Hoodie Belzebot Futurama</h3>
+                            <div class="img-contendor">
+                                <img src="img/abrigo1.jpg" alt="" class="imgs">   
+                            </div>
+                        <h3>$ 21.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Hoodie Billy&Mandy</h3>
+                            <div class="img-contendor">
+                                <img src="img/abrigo2.jpg" alt="">   
+                            </div>
+                        <h3>$ 19.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Camiseta Worlds Hottest Tour</h3>
+                            <div class="img-contendor">
+                                <img src="img/badbun.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Abrigo Science Fiction</h3>
+                            <div class="img-contendor">
+                                <img src="img/buzo.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Camiseta Security Seal</h3>
+                            <div class="img-contendor">
+                                <img src="img/camiseta.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Camiseta Billy&Mandy</h3>
+                            <div class="img-contendor">
+                                <img src="img/camisetab.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Camiseta Belzebot Futurama</h3>
+                            <div class="img-contendor">
+                                <img src="img/camisetah.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Estampado Chill</h3>
+                            <div class="img-contendor">
+                                <img src="img/chill.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Estampado BeavesNButthead</h3>
+                            <div class="img-contendor">
+                                <img src="img/mtv.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Estampado Look At Thing</h3>
+                            <div class="img-contendor">
+                                <img src="img/rick.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Estampado I Just want to die</h3>
+                            <div class="img-contendor">
+                                <img src="img/todie.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                    <div class="producto">
+                        <h3 class="texto" onmouseover="cambiar(this)" onmouseout="restaurar(this)">Estampado What Impostors</h3>
+                            <div class="img-contendor">
+                                <img src="img/what_logo.jpg" alt="">   
+                            </div>
+                        <h3>$ 9.99</h3>
+                        <button onclick="location.href='pago.html'">Comprar</button>
+                    </div>
+                </div> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer>
+                <p>&copy; RUBBER STORE 2022</p>
+            </footer>
+        </main> 
+    </body>
+</html>
