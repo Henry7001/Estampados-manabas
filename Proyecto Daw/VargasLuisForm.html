@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Detalle Producto</title>
+    <style>
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .row__input {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+      }
+
+      .compra_img img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .mb-3 {
+        margin-bottom: 30px;
+      }
+
+      .control small {
+        visibility: hidden;
+        display: none;
+      }
+
+      .btn {
+        padding: 15px;
+        width: 95%;
+        margin: 0 auto;
+        background-color: #201c1c;
+        color: #f1f1f1;
+      }
+      .btn:hover {
+        color: #f1f1f1;
+        background-color: #3932a2;
+      }
+
+      .form-control,
+      .control input,
+      .control select {
+        width: 70%;
+        height: 40px;
+      }
+
+      .control input {
+        padding: 3px;
+        border: 1px solid #ccc;
+        background: #fff;
+      }
+
+      .col-form-label,
+      .control input,
+      .control select {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+      }
+      .form__title {
+        font-family: Bebas Neue;
+        font-size: 40px;
+      }
+
+      .alert {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: red;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoEmpresa.jpg" alt="" />
+        <h2 class="nombre-empresa">RUBBER STORE</h2>
+      </div>
+      <nav>
+        <a href="DelgadoDave.html" class="nav-link">Inicio</a>
+        <a href="VargasLuis.html" class="nav-link">Quienes somos</a>
+        <a href="AlvarezPaolo.html" class="nav-link">Servicios</a>
+        <a href="SolórzanoRicardo.html" class="nav-link">Tienda</a>
+        <a href="RuizHenry.html" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+    <div class="container bg-dark">
+      <h1 class="titulo1 text-center">Detalle Pedido</h1>
+    </div>
+    <div class="container row">
+      <form onsubmit="return validar()" action="pago.html" method="get">
+        <h2 class="form__title text-center">Camisa Calamardo</h2>
+
+        <div class="mb-3 row__input">
+          <label for="cantidad" class="col-form-label">Cantidad</label>
+          <div class="control">
+            <input
+              type="number"
+              id="cantidad"
+              class="form-control"
+              placeholder="Ingrese cantidad"
+            />
+            <small>La cantidad debe ser mayor a 0</small>
+          </div>
+        </div>
+        <div class="mb-3 row__input">
+          <label for="cantidad" class="col-form-label">Tallas</label>
+          <div class="control">
+            <select name="tallas" id="tallas">
+              <option value="default">Seleccionar</option>
+              <option value="small">Pequeña</option>
+              <option value="medium">Mediana</option>
+              <option value="large">Grande</option>
+              <option value="x-larga">Extra Grande</option>
+            </select>
+            <small>No ha seleccionado ninguna talla</small>
+          </div>
+        </div>
+        <div class="mb-3 row__input">
+          <label for="cantidad" class="col-form-label">Modelos</label>
+          <div class="control">
+            <select name="modelos" id="modelos" onchange="doSomething(this);">
+              <option value="model1">Modelo 1</option>
+              <option value="model2">Modelo 2</option>
+              <option value="model3">Modelo 3</option>
+            </select>
+          </div>
+        </div>
+        <button class="button btn" type="submit">Agregar</button>
+      </form>
+      <div class="compra_img">
+        <img src="img/model1.jpg" alt="modelo1" class="img_model" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <p>&copy; RUBBER STORE 2022</p>
+    </footer>
+    <script>
+      const $ = (element) => document.querySelector(element);
+
+      function doSomething(seleccionado) {
+        const value = seleccionado[seleccionado.selectedIndex].value;
+        const $img = $(".img_model");
+        $img.src = `img/${value}.jpg`;
+      }
+
+      function validar() {
+        valido = true;
+        const $cantidad = $("#cantidad");
+        const $tallas = $("#tallas");
+        if ($cantidad.value < 1) {
+          alerta($cantidad);
+          return false;
+        }
+        if ($tallas.selectedIndex === 0) {
+          alerta($tallas);
+          return false;
+        }
+        alert("Ingrese métodos de pago");
+        return valido;
+      }
+
+      // funcion para cambiar las propiedades
+      const alerta = (element) => {
+        element.style.border = "1px solid red";
+        const $small = element.nextElementSibling || element.nextSibling;
+        $small.className = " alert";
+        $small.style.display = "block";
+        $small.style.visibility = "visible";
+      };
+    </script>
+  </body>
+</html>
