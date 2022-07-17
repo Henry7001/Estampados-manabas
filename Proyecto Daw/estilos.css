@@ -426,7 +426,7 @@ h1 span:after {
   margin-right: 20px;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 .list {
   position: relative;
   display: flex;
@@ -528,8 +528,8 @@ ul li:first-child:hover:before,
 ul li:last-child:hover:after {
   border-bottom: 20px solid #000;
 }
-=======
->>>>>>> b07dff2508a1923fc9bdb7f7a30f78cd56204674
+/*=======
+//>>>>>>> b07dff2508a1923fc9bdb7f7a30f78cd56204674*/
 
 /* Colores */
 
