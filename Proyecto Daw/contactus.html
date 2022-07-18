@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/logoEmpresa.jpg">
+    <!--Librería de iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>Henry Ruiz</title>
+    <style>
+        main {
+            height: 90vh;
+        }
+
+        .ubi-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .iframe-margin{
+            border-radius: 10px;
+            border: 20px solid rgb(32, 28, 28);
+            }
+
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            -webkit-font-smoothing:antialiased;
+            -moz-font-smoothing:antialiased;
+            -o-font-smoothing:antialiased;
+            text-rendering:optimizeLegibility;
+        }
+
+        .container {
+            max-width:400px;
+            width:100%;
+            margin:0 auto;
+            position:relative;
+        }
+
+        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+        #contact {
+            background:#F9F9F9;
+            padding:25px;
+            margin:50px 0;
+        }
+
+        #contact h3 {
+            color: rgb(32, 28, 28);
+            font-family: Bebas Neue;
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        #contact h4 {
+            margin:5px 0 15px;
+            font-family: Bebas Neue;
+            display:block;
+            font-size:20px;
+            font-weight: 400;
+        }
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+            width:100%;
+            border:1px solid #CCC;
+            background:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+        }
+
+        #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+            -webkit-transition:border-color 0.3s ease-in-out;
+            -moz-transition:border-color 0.3s ease-in-out;
+            transition:border-color 0.3s ease-in-out;
+            border:1px solid #AAA;
+        }
+
+        #contact textarea {
+            height:100px;
+            max-width:100%;
+        resize:none;
+        }
+
+        #contact button[type="submit"] {
+            cursor:pointer;
+            width:100%;
+            border:none;
+            background:rgb(32, 28, 28);
+            color:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+            font-size:15px;
+        }
+
+        #contact button[type="button"] {
+            cursor:pointer;
+            width:100%;
+            border:none;
+            background:rgb(145, 27, 27);
+            color:#FFF;
+            margin:0 0 5px;
+            padding:10px;
+            font-size:15px;
+        }
+
+        #contact button[type="submit"]:hover {
+            background:rgb(32, 28, 28);
+            -webkit-transition:background 0.3s ease-in-out;
+            -moz-transition:background 0.3s ease-in-out;
+            transition:background-color 0.3s ease-in-out;
+        }
+
+        #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+        #contact input:focus, #contact textarea:focus {
+            outline:0;
+            border:1px solid #999;
+        }
+        ::-webkit-input-placeholder {
+        color:#888;
+        }
+        :-moz-placeholder {
+        color:#888;
+        }
+        ::-moz-placeholder {
+        color:#888;
+        }
+        :-ms-input-placeholder {
+        color:#888;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logoEmpresa.jpg" alt="">
+            <h2 class="nombre-empresa">
+               RUBBER STORE
+            </h2>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+			<a href="aboutus.html" class="nav-link">Quienes somos</a>
+			<a href="services.html" class="nav-link">Servicios</a>
+			<a href="shop.html" class="nav-link">Tienda</a>
+			<a href="contact.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contact-container">
+            <h1 class="titulo">Contacto</h1>
+        </div>
+
+        <div class="container">  
+            <form id="contact" onsubmit="validar();">
+              <h3>Formulario de contacto</h3>
+              <h4>Contactenos, apenas lo leamos, lo responderemos.</h4>
+              <fieldset>
+                <input id="nombre" placeholder="Su nombre" type="text" tabindex="1" autofocus>
+              </fieldset>
+              <fieldset>
+                <input id="cedula" placeholder="Su número de cédula" type="text" tabindex="2">
+              </fieldset>
+              <fieldset>
+                <input id="correo" placeholder="Su correo electrónico" type="text" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <input id="celular" placeholder="Su número de celular" type="text" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <input id="asunto" placeholder="Asunto del contacto" type="text" tabindex="5">
+              </fieldset>
+              <fieldset>
+                <textarea id="mensaje" placeholder="Escriba su mensaje aquí..." tabindex="6"></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="enviar" type="submit" id="contact-submit">Enviar mensaje</button>
+              </fieldset>
+              <button onclick="location.href='contact.html'" type="button">Volver a Contactos</button>
+            </form>
+          </div>
+        
+        <footer>
+            <p>&copy; RUBBER STORE 2022</p>
+        </footer>
+    </main>
+    <script>
+        var correo= document.getElementById('correo');
+        var nombre= document.getElementById('nombre');
+        var asunto= document.getElementById('asunto');
+        var mensaje= document.getElementById('mensaje');
+        var cedula= document.getElementById('cedula');
+        var celular= document.getElementById('celular');
+        var emailExpresion = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        function validar(){
+            //validar correo
+            if(!emailExpresion.test(correo.value)){
+                alert('Correo no valido');
+                correo.focus();
+            }
+            //validar campos vacios
+            if(nombre.value='' || asunto.value == '' || mensaje.value == '' || cedula.value == '' || celular.value == ''){
+                alert('Todos los campos son obligatorios');
+            }
+            /*validar que el campo de celular tenga formato de número de Ecuador 
+            y solo puedan ingresar números */
+            if(isNaN(celular.value)){
+                alert('Solo debe ingresar números en el campo de celular');
+                celular.focus();
+            }
+            if(celular.value.length != 10){
+                alert('El número de celular debe tener 10 dígitos');
+                celular.focus();
+            }
+            //validar que la cédula tenga 10 dígitos y sean números
+            if(isNaN(cedula.value)){
+                alert('Solo debe ingresar números en el campo de cédula');
+                cedula.focus();
+            }
+            if(cedula.value.length != 10){
+                alert('El número de cédula debe tener 10 dígitos');
+                cedula.focus();
+            }
+        }
+    </script>
+</body>
+</html>

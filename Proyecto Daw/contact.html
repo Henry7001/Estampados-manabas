@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/logoEmpresa.jpg">
+    <!--Librería de iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>Henry Ruiz</title>
+    <style>
+        .ubi-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .iframe-margin{
+            border-radius: 10px;
+            border: 20px solid rgb(32, 28, 28);
+        }
+        
+        .list {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 470px;
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+            float: left;
+        }
+
+        ol.lista {
+            list-style: none;
+            float: left;
+        }
+
+        ol.lista li {
+            font-size: 30px;
+            font-family: Bebas Neue;
+        }
+
+        ul li {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            float: left;
+        }
+
+        ul li a {
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            display: block;
+            background: #33322f;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+        }
+
+        ul li a:after {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: 0;
+            border: 40px solid transparent;
+            border-top: 0;
+            border-bottom: 40px solid #33322f;
+        }
+
+        ul li a:before {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            border: 40px solid transparent;
+            border-top: 40px solid #33322f;
+            border-bottom: 0;
+        }
+
+        ul li a:hover {
+            background: #000;
+        }
+
+        ul li a:hover:after {
+            border-bottom: 40px solid #000;
+        }
+
+        ul li a:hover:before {
+            border-top: 40px solid #000;
+        }
+
+        ul li:first-child:before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            border: 20px solid transparent;
+            border-top: 0;
+            border-bottom: 20px solid #33322f;
+            transform: rotate(-90deg);
+        }
+
+        ul li:last-child:after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            border: 20px solid transparent;
+            border-top: 0;
+            border-bottom: 20px solid #33322f;
+            transform: rotate(90deg);
+        }
+
+        ul li:first-child:hover:before,
+        ul li:last-child:hover:after {
+            border-bottom: 20px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logoEmpresa.jpg" alt="">
+            <h2 class="nombre-empresa">
+               RUBBER STORE
+            </h2>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+			<a href="aboutus.html" class="nav-link">Quienes somos</a>
+			<a href="services.html" class="nav-link">Servicios</a>
+			<a href="shop.html" class="nav-link">Tienda</a>
+			<a href="contact.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contact-container">
+            <h1 class="titulo">Contacto</h1>
+        </div>
+
+        <div class="wrapper">
+            <h1 class="titulo-Redes">
+              <span>¿Cómo contactar con nosotros?</span>
+            </h1>
+            <div class="list">
+              <ul>
+                <li><a href="https://www.instagram.com/rubberstore_ec/" class="instagram"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.tiktok.com/@rubberstore_ec" class="tiktok"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+                <li><a href="https://walink.co/24c3cb" class="whatsapp"><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
+                <li><a href="contactus.html" class="email"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+              </ul>
+            </div>
+            <br><br><br>
+            <ol class="lista">
+                <li>En Instagram y Tiktok nos pueden encontrar como @rubberstore_ec.</li>
+                <li>En whatsapp nos pueden escribir al 0961537599 o directamente por formulario.</li>
+                <li>Puede acceder a ellos en los íconos de arriba.</li>
+            </ol>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="contact-container">
+            <h1 class="titulo">Ubicación</h1>
+        </div>
+
+        <div class="wrapper">
+            <h1 class="titulo-Redes">
+              <span>¿Dónde nos encontramos?</span>
+            </h1>
+            <div class="ubi-container">
+                <iframe class="iframe-margin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.184787307056!2d-79.90990980528295!3d-2.1702055090091408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9d24a0d021%3A0x896f0fc5b88a7892!2sNativo%20%26%20Co!5e0!3m2!1ses-419!2sec!4v1656264469188!5m2!1ses-419!2sec" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ol class="lista">
+                <li>Nos encontramos en Nativo & CO. en Urdesa (Al frente del Banco del Pacífico).</li>
+                <li>En las calles Victor Emilio Estrada local 5, Guayaquil 090507.</li>
+                <li>En el mapa de arriba se puede referenciar sobre nuestra ubicación exacta.</li>
+            </ol>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; RUBBER STORE 2022</p>
+        </footer>
+    </main>
+</body>
+</html>

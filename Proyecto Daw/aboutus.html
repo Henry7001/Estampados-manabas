@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Luis Byron Vargas</title>
+    <style>
+      .space {
+        flex: 1 1 auto;
+      }
+
+      .lista {
+        margin: 20px auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .valor {
+        color: #f0f8ff;
+        text-align: center;
+        font-family: "Exo 2";
+        border-radius: 5%;
+        align-self: center;
+        font-size: 20px;
+      }
+
+      .tab {
+        overflow: hidden;
+      }
+
+      .tablink,
+      .tab_link {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 16px 18px;
+        transition: 0.3s;
+        font-family: "Exo 2";
+        font-size: 22px;
+        color: #f1f1f1;
+      }
+
+      .tablink:hover {
+        background-color: #f1f1f1;
+        color: rgb(32, 28, 28);
+      }
+      a {
+        padding: 17px;
+      }
+      a:hover {
+        color: inherit;
+      }
+      .tabcontent {
+        display: none;
+        padding: 2px 12px;
+        border-top: none;
+      }
+      ol {
+        font-size: 20px;
+        color: #f1f1f1;
+        font-family: Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoEmpresa.jpg" alt="" />
+        <h2 class="nombre-empresa">RUBBER STORE</h2>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="aboutus.html" class="nav-link">Quienes somos</a>
+        <a href="services.html" class="nav-link">Servicios</a>
+        <a href="shop.html" class="nav-link">Tienda</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+    <div class="container bg-dark">
+      <h1 class="titulo1 text-center">¿Quiénes Somos?</h1>
+    </div>
+    <div class="container bg-dark" style="display: block">
+      <div class="tab bg-dark">
+        <button class="tablink" id="mision">Misión</button>
+        <button class="tablink" id="vision">Visión</button>
+        <button class="tablink" id="valores">Valores</button>
+      </div>
+      <div class="tabcontent" id="mision_content" style="display: block">
+        <div class="card px-2 mx-2">
+          <div class="card__body">
+            <h2 class="card__title text-center">Misión</h2>
+            <p>
+              Algunas personas creen que para hacer crecer una empresa se debe
+              ser despiadado, pero sabemos que hay una mejor alternativa; un
+              método en el que el resultado final también es bueno para los
+              clientes.
+              <br />
+              Creemos que los negocios pueden crecer con conciencia, alcanzar el
+              éxito con ética y que esto se puede lograr con el método inbound.
+              Por eso, creamos una plataforma que combina el software, la
+              educación y el sentido comunitario para ayudar a las empresas a
+              crecer mejor todos los días.
+            </p>
+          </div>
+          <div class="card__img">
+            <img src="img/mision.webp " alt="Mision" />
+          </div>
+        </div>
+      </div>
+      <div class="tabcontent" id="vision_content">
+        <div class="card px-2 mx-2">
+          <div class="card__body">
+            <h2 class="card__title text-center">Visión</h2>
+            <p>
+              La visión de RubberStore se puede resumir en los siguientes
+              aspectos:
+            </p>
+            <ol>
+              <li>Trabajamos para el cliente.</li>
+              <li>Trabajamos para ser muy transparentes.</li>
+              <li>Favorecemos la autonomía y la responsabilidad.</li>
+              <li>
+                Creemos que nuestra mejor ventaja son los compañeros increíbles.
+              </li>
+              <li>Nos inclinamos por el impacto a largo plazo</li>
+            </ol>
+          </div>
+          <div class="card__img">
+            <img src="img/vision.webp" alt="Vision" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tabcontent" id="valores_content">
+        <div class="px-2 mx-2">
+          <h2 class="titulo1 text-center" style="font-size: 32px">
+            Valores de nuestra empresa
+          </h2>
+          <div class="valores">
+            <div class="lista">
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-bulb"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"
+                  />
+                  <path
+                    d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+                  />
+                  <line x1="9.7" y1="17" x2="14.3" y2="17" />
+                </svg>
+                <h4>Creatividad</h4>
+                <p style="text-align: left">
+                  Se considera creatividad empresarial a la capacidad de los
+                  trabajadores para generar ideas y diseñar nuevos canales,
+                  técnicas
+                </p>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-award"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="12" cy="9" r="6" />
+                  <polyline
+                    points="9 14.2 9 21 12 19 15 21 15 14.2"
+                    transform="rotate(-30 12 9)"
+                  />
+                  <polyline
+                    points="9 14.2 9 21 12 19 15 21 15 14.2"
+                    transform="rotate(30 12 9)"
+                  />
+                </svg>
+                <h4>Calidad</h4>
+                <p>
+                  La satisfacción de los clientes depende en gran medida de la
+                  calidad de los productos o servicios que proveen las empresas.
+                </p>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-scale"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="7" y1="20" x2="17" y2="20" />
+                  <path d="M6 6l6 -1l6 1" />
+                  <line x1="12" y1="3" x2="12" y2="20" />
+                  <path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0" />
+                  <path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0" />
+                </svg>
+                <h4>Honestidad</h4>
+                <p>
+                  Ser honesto en el trabajo significa comportarse dentro de la
+                  verdad, la lealtad, las normas éticas y una conducta moral,
+                </p>
+              </div>
+              <div class="valor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-list-check"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ddc16d"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                  <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                  <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                  <line x1="11" y1="6" x2="20" y2="6" />
+                  <line x1="11" y1="12" x2="20" y2="12" />
+                  <line x1="11" y1="18" x2="20" y2="18" />
+                </svg>
+                <h4>Responsabilidad</h4>
+                <p>
+                  Actúo de manera correcta para cumplir con mi empresa, mis
+                  compañeros y mi familia; somos transparentes, hablamos con la
+                  verdad y decimos las cosas de forma clara y a tiempo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <p>&copy; RUBBER STORE 2022</p>
+    </footer>
+    <script>
+      const $$ = (elements) => document.querySelectorAll(elements);
+
+      const $tabs = $$(".tablink");
+      // recorro todos los tablink
+      $tabs.forEach((tab) => {
+        // le agrego el evento click
+        tab.addEventListener("click", (e) => {
+          // recorro todos los tabcontent
+          $$(".tabcontent").forEach((content) => {
+            // si mi tab es diferente al id del elemento se pone display none
+            if (content.id !== e.target.id + "_content") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
