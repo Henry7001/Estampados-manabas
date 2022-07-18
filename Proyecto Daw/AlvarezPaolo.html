@@ -76,29 +76,68 @@
         <div class="principio">
           <h1 class="titulo-service">Diseños personalizados</h1>
           <p class="parrafo-service">
-            Nos ecargamos de hacer tus diseños favoritos realidad!, contamos con diseños de todo tipo:
-            series, animes, personas, movimientos, moda, peliculas, el límite es tu creatividad.
+            Tenemos los mejores diseños para ti, aprovecha y registrate con nosotros para recibir las mejores ofertas por ser parte 
+            de nuestros miembros.
             
           </p>
-          <a href="SolórzanoRicardo.html" class="button gobutton-service">Ver tienda</a>
+          <a href="AlvarezPaoloForm.html" class="button gobutton-service">registrarse</a>
         </div>
-        <div class="slider-services" style=" height: 300px;
-          width: 500px;
-          overflow: hidden;
-          margin-inline: 95px;
-          border-radius: 10px;">
-          <ul>
-            <li><img src="img/diseño4.jpg" alt=""></li>
-            <li><img src="img/diseño13.jpg" alt=""></li>
-            <li><img src="img/diseño14.jpg" alt=""></li>
-            <li><img src="img/diseño15.jpg" alt=""></li>
-          </ul>
+        <div class="contenedor-carrucel">
+          <div class="carrucel">
+            <div class="atras botones">
+              &#60
+            </div>
+            <div class="adelante botones">
+              &#62
+            </div>
+            <img class="img-carrucel" src="/img/diseño1.jpg" alt="" id="imagen">
+          </div>
         </div>
     </div>
     <footer>
         <p>&copy; RUBBER STORE 2022</p>
     </footer>
-  
 
-</body>
+    <script>
+      var imgCarrucel = ['img/diseño1.jpg', 'img/diseño2.jpg', 'img/diseño3.jpg', 'img/diseño4.jpg'],
+      cont = 0;
+
+      function carrousel(contenedor){
+        contenedor.addEventListener('click', e =>{
+          let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('.img-carrucel'),
+            tgt = e.target;
+
+
+
+          if(tgt == atras){
+            if(cont > 0){
+              img.src = imgCarrucel[cont - 1];
+              cont --;
+            }else{
+              img.src = imgCarrucel[imgCarrucel.length - 1];
+              cont = imgCarrucel.length - 1;
+            }
+          }else if(tgt == adelante){
+            if(cont < imgCarrucel.length -1){
+              img.src = imgCarrucel[cont + 1];
+              cont ++;
+            }else{
+              img.src = imgCarrucel[0];
+              cont = 0;
+            }
+          }
+
+
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        let contenedor = document.querySelector('.carrucel');
+
+        carrousel(contenedor)
+      });
+    </script>
+  </body>
 </html>

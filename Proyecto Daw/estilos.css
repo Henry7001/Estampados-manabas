@@ -646,6 +646,8 @@ ul li:last-child:hover:after {
   margin-inline: 120px;
   margin-block: 40px;
   border-radius: 10px;
+  margin-bottom: 50px;
+  
 }
 
 .img-principio img {
@@ -704,3 +706,59 @@ ul li:last-child:hover:after {
     margin-left: -300%;
   }
 }
+
+.carrucel{
+  padding-top: 30px;
+}
+
+.contenedor-carrucel{
+  margin-bottom: 20px;
+  width: 400px;
+  padding-bottom:20px ;
+  padding-inline: 150px ;
+  position: relative;  
+}
+
+
+.img-carrucel{
+  width: 100%;
+  height: 230px;
+  border-radius: 10px ;
+}
+
+.botones{
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,.6);
+  -webkit-transition: all .3s ease;
+  -o-transition:all .3s ease;
+  transition: all .3s ease;
+
+}
+
+.botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+}
+.atras{
+  left: 100px;
+  top: 100px;
+}
+.adelante{
+  right: 100px;
+  top: 100px;
+}
+
+/* Estilos formulario Paolo Alvarez*/
+
+
+
+
